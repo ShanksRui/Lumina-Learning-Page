@@ -4,26 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.jpg" />
     <link rel="stylesheet" href="assets/css/styleLumina.css" />
   </head>
   <body>
     <header class="heading">
-      <a href="http://127.0.0.1:5500/Lumina.htm" class="site">
-        <img src="assets/images/logo.png" alt="lumina learning logo" />
-      </a>
-      <h1>Lumina Learning</h1>
-      
-      <h2>
-        Lumina Learning is a global leader in personality assessment and
-        development, providing innovative solutions to help individuals and
-        organizations thrive. With a focus
-      </h2>
+      <div class="navegation">
+        <a href="http://127.0.0.1:5500/Lumina.htm" class="site">
+          <img src="assets/images/logo1.png" alt="lumina learning logo" />
+        </a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="buttons">
+        <button>Entrar</button>
+        <button>Cadastrar</button>
+      </div>
     </header>
 
-    <label for="searchInput" class="search"
-      >Search Courses:
-      <input type="search" name="tema" placeholder="Write name course..." />
-    </label>
+    <header class="title">
+      <h1>Lumina Learning</h1>
+      <h2>
+        Education Platform for Students in differents disciplines or courses
+      </h2>
+
+      <section class="search-hero">
+        <div class="search">
+          <label for="searchInput">Search Diciplines: </label>
+          <input
+            id="searchInput"
+            type="search"
+            name="tema"
+            placeholder="Write name dicipline..."
+          />
+        </div>
+      </section>
+    </header>
+    <div class="container-center">
+      <aside class="list-aside">
+        <ol>
+          <li>Themes</li>
+          <li>Careers</li>
+          <li>Your license plates</li>
+          <li>Certifications</li>
+        </ol>
+      </aside>
+      <main>
+        <b>Monthly Plans</b>
+      </main>
+    </div>
   </body>
 </html>
