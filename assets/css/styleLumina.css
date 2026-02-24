@@ -167,13 +167,29 @@ input:focus {
   width: 70%;
   max-width: 1200px;
   margin-right: 5%;
+  background-color: rgba(255, 255, 255, 0.3);
 }
-main strong {
+.plans article strong {
+  display: block;
+}
+main em {
   justify-content: center;
   display: flex;
   font-size: clamp(1rem, 2vw, 3rem);
-  margin-right: 12%;
+  margin-right: 4%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+main > strong {
+  font-size: clamp(0.7rem, 0.5vw, 2rem);
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+main > :first-child::after {
+  content: "";
+  display: block;
+  width: min(90%, 1100px);
+  border-top: solid 2px #222;
+  margin-top: 5px;
 }
 main {
   width: 100%;
@@ -186,6 +202,36 @@ main::after {
   width: min(90%, 1100px);
   margin: 16px auto;
   border-top: 2px outset #222;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.courses h2 {
+  font-size: clamp(1rem, 2vw, 4rem);
+  color: #2e2d2d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.courses article {
+  border: 1px solid #4d4b4b;
+  color: #000000;
+  border-style: groove;
+  border-radius: 2px;
+  padding: 10px;
+  width: 30%;
+  min-height: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.courses img {
+  width: clamp(40px, 1vw, 140px);
+  height: auto;
 }
 
 .about {
