@@ -37,6 +37,7 @@ body {
   border: 2px #a1a19d;
   border-radius: 6px;
   border-style: groove;
+  filter: drop-shadow(1px 1px 1px #585858);
 }
 
 .navegation {
@@ -217,6 +218,15 @@ main::after {
   margin-top: 10%;
   box-shadow: 10px 4px 8px #4d4b4b;
 }
+@media (max-width: 768px) {
+  .courses {
+    flex-wrap: wrap;
+  }
+  .courses article {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}
 .courses h2 {
   font-size: clamp(1rem, 2vw, 4rem);
   color: #353535;
@@ -240,8 +250,19 @@ main::after {
   cursor: pointer;
 }
 .courses img {
-  width: clamp(40px, 1vw, 140px);
+  width: clamp(2rem, 3vw, 3rem);
   height: auto;
+}
+.courses article em {
+  font-size: clamp(0.7rem, 1.5vw, 2rem);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-right: 10px;
+}
+.courses article strong {
+  font-size: clamp(0.7rem, 1vw, 2rem);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333232;
 }
 
 .about {
